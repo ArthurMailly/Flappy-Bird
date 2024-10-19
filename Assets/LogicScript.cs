@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class LogicScript : MonoBehaviour
 {
@@ -25,5 +26,10 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
+    }
+
+    public void exitApplication()
+    {
+        Application.Quit();
     }
 }
